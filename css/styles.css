@@ -1,0 +1,186 @@
+/* 
+Brand Colors:
+Primary Color: #1d2d5f - Navigation bar, section headers, footer
+Secondary Color: #fcf8f5 - Borders, secondary text
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f7f7f7;
+    color: #222;
+    line-height: 1.6;
+}
+
+/* Navigation */
+
+.navbar {
+    background-color: #1d2d5f;
+    color: white;
+    padding: 1rem 2rem;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 70px;
+    height: auto;
+}
+
+.course-title h1 {
+    font-size: 1.8rem;
+    color: white;
+}
+
+/* Hero Section */
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 3rem 2rem;
+    background-color: white;
+}
+
+.hero-image img {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 6px solid #fcf8f5;
+}
+
+.hero-text {
+    max-width: 500px;
+}
+
+.hero-text h2 {
+    font-size: 2.2rem;
+    color: #1d2d5f;
+    margin-bottom: 0.5rem;
+}
+
+.hero-text h3 {
+    font-size: 1.3rem;
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.hero-text p {
+    margin-bottom: 0.75rem;
+}
+
+.institution {
+    color: #555;
+    font-weight: bold;
+}
+
+/* Course Description */
+
+.course-description {
+    padding: 2rem;
+}
+
+.description-card {
+    background-color: white;
+    border-left: 8px solid #1d2d5f;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.description-card h2 {
+    color: #1d2d5f;
+    margin-bottom: 1rem;
+}
+
+/* Resources */
+
+.resources {
+    padding: 2rem;
+}
+
+.section-title {
+    color: #1d2d5f;
+    margin-bottom: 1.5rem;
+}
+
+.resource-grid {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.resource-card {
+    flex: 1;
+    min-width: 220px;
+    background-color: white;
+    border: 2px solid #fcf8f5;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.resource-card h3 {
+    color: #1d2d5f;
+    margin-bottom: 0.75rem;
+}
+
+.resource-card a {
+    color: #1d2d5f;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.resource-card a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+
+.footer {
+    background-color: #1d2d5f;
+    color: white;
+    text-align: center;
+    padding: 1.25rem;
+    margin-top: 2rem;
+}
+
+/* Responsive */
+
+@media (max-width: 760px) {
+
+    .nav-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .resource-grid {
+        flex-direction: column;
+    }
+
+    .hero-image img {
+        width: 180px;
+        height: 180px;
+    }
+
+    .course-title h1 {
+        font-size: 1.5rem;
+    }
+}
